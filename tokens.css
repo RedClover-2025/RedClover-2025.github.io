@@ -1,1 +1,57 @@
-:root { --rc-bg-base: #0a0b0d; --rc-bg-surface: #14161a; --rc-text-primary: #f8f9fa; --rc-text-secondary: #a1a1aa; --rc-accent-red: #d32f2f; --rc-accent-red-hover: #b71c1c; --rc-border-subtle: #272a30; --rc-petal-fill: rgba(211, 47, 47, 0.12); --rc-petal-stroke: rgba(211, 47, 47, 0.4); --rc-utility-success: #2e7d32; --rc-font-plex: IBM Plex Sans, sans-serif; } body { background-color: var(--rc-bg-base); color: var(--rc-text-primary); font-family: var(--rc-font-plex); margin: 0; padding: 0; line-height: 1.6; -webkit-font-smoothing: antialiased; } .btn-petal { background-color: var(--rc-petal-fill); color: var(--rc-text-primary); border: 1px solid var(--rc-petal-stroke); border-radius: 24px 0 24px 0; padding: 12px 28px; font-family: var(--rc-font-plex); font-weight: 600; font-size: 0.9rem; letter-spacing: 0.5px; text-transform: uppercase; cursor: pointer; transition: all 0.3s ease; } .btn-petal:hover { background-color: var(--rc-accent-red); border-color: var(--rc-accent-red); }
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;600&display=swap');
+
+:root {
+    /* Base & Surface (Dark Mode Default) */
+    --rc-bg-base: #0a0b0d;
+    --rc-bg-surface: #14161a;
+    
+    /* Typography */
+    --rc-text-primary: #f8f9fa;
+    --rc-text-secondary: #a1a1aa;
+    
+    /* Accents & Borders */
+    --rc-accent-red: #d32f2f;
+    --rc-accent-red-hover: #b71c1c; 
+    --rc-border-subtle: #272a30;
+    
+    /* Component Specific (Petal Fill) */
+    --rc-petal-fill: rgba(211, 47, 47, 0.12);
+    --rc-petal-stroke: rgba(211, 47, 47, 0.4);
+    
+    /* Utility */
+    --rc-utility-success: #2e7d32;
+
+    /* Font Family */
+    --rc-font-plex: 'IBM Plex Sans', sans-serif;
+}
+
+body {
+    background-color: var(--rc-bg-base);
+    color: var(--rc-text-primary);
+    font-family: var(--rc-font-plex);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Petal-fill Button Implementation */
+.btn-petal {
+    background-color: var(--rc-petal-fill);
+    color: var(--rc-text-primary);
+    border: 1px solid var(--rc-petal-stroke);
+    border-radius: 24px 0 24px 0;
+    padding: 12px 28px;
+    font-family: var(--rc-font-plex);
+    font-weight: 600;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-petal:hover {
+    background-color: var(--rc-accent-red);
+    border-color: var(--rc-accent-red);
+}
